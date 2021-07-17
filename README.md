@@ -22,7 +22,7 @@ Ces analyses ont été mise à disposition au travers d’une __WebApp__ créée
 
 Le site est hébergé directement sur les serveurs mis à disposition par *Streamlit* :
 
-https://share.streamlit.io/mickaelkohler/popmydata/main/locannuaire.py
+https://share.streamlit.io/mypopupstore/popmydata/main/locannuaire.py
 
 ### Captures d’écran
 
