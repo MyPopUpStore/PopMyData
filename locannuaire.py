@@ -75,11 +75,11 @@ def visibility_rating(table, departement):
     if table.loc['Centres Commerciaux', 'Total'] >= 90:          # 1er palier: plus de 90% de bars/restaurants
         table.loc['Centres Commerciaux', 'Note'] = coef_bar_max    # La note générale sera baissé des points du coef_max
     elif table.loc['Centres Commerciaux', 'Total'] >= 60:        # 2em palier: entre 89% et 60% de bars/restaurants
-        table.loc['Centres Commerciaux', 'Note'] = coef_bar_mid    # La note générale sera baissé des points du coef_mid
+        table.loc['Centres Commerciaux', 'Note'] = -1              # La note générale sera baissé des points du coef_mid
     elif table.loc['Centres Commerciaux', 'Total'] >= 10:        # 3em palier: entre 69 et 50 de bars/restaurants
         table.loc['Centres Commerciaux', 'Note'] = 0               # La note générale sera identique
     elif table.loc['Centres Commerciaux', 'Total'] <= 10:        # 4em palier: moins de 10% de bars/restaurants
-        table.loc['Centres Commerciaux', 'Note'] = -1              # La note générale sera baissé de 1 point
+        table.loc['Centres Commerciaux', 'Note'] = coef_bar_mid    # La note générale sera baissé de 1 point
 
     # Centre Commeriaux pour TOUTES LES VILLES
     table.loc['Centres Commerciaux', 'Note'] = coef_mall if table.loc['Centres Commerciaux', 'Total'] >= 1 else 0
