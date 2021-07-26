@@ -28,7 +28,7 @@ Ces analyses ont été mises à disposition au travers d’une __WebApp__ créé
 
 ### Adresse du site :
 
-Le site est hébergé directement sur les serveurs mis à disposition par *Streamlit* :
+Le site est hébergé sur les serveurs mis à disposition par *Streamlit* :
 
 https://share.streamlit.io/mypopupstore/popmydata/main/locannuaire.py
 
