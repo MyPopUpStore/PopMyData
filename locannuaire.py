@@ -565,7 +565,7 @@ type_name = 'shoes|garden_center|department_store|cosmetics|leather|perfumery|be
 # DATA #
 
 FLPM_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/FLPM_PRS.csv'
-FLPM_BDX = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_BDX.csv'
+FLPM_BDX = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/FLPM_BDX.csv'
 FLPM_LIL = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/FLPM_LIL.csv'
 
 BANCO_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_PRS.csv'
