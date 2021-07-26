@@ -37,7 +37,6 @@ https://share.streamlit.io/mypopupstore/popmydata/main/locannuaire.py
 ![screenshot1](https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/capture1.png)
 ![screenshot2](https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/Capture2.png)
 ![screenshot3](https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/Capture3.png)
-![screenshot3](https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/Capture4.png)
 
 ## Technologies 
 
