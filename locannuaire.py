@@ -564,19 +564,19 @@ type_name = 'shoes|garden_center|department_store|cosmetics|leather|perfumery|be
 
 # DATA #
 
-FLPM_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/FLPM_PRS.csv'
-FLPM_BDX = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/FLPM_BDX.csv'
-FLPM_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/FLPM_LIL.csv'
+FLPM_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/FLPM_PRS.csv'
+FLPM_BDX = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_BDX.csv'
+FLPM_LIL = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/FLPM_LIL.csv'
 
-BANCO_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_PRS.csv'
-BANCO_BDX = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_BDX.csv'
-BANCO_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_LIL.csv'
+BANCO_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_PRS.csv'
+BANCO_BDX = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_BDX.csv'
+BANCO_LIL = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/BANCO_LIL.csv'
 
-METRO_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/metro_paris.csv'
-FREQ_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/frequentation_metro_paris.csv'
-FREQ_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/metro_lil.csv'
-INSEE = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/insee.csv'
-BPE = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/bpe.csv'
+METRO_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/metro_paris.csv'
+FREQ_PRS = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/frequentation_metro_paris.csv'
+FREQ_LIL = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/metro_lil.csv'
+INSEE = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/insee.csv'
+BPE = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/bpe.csv'
 
 PARK = 'https://static.data.gouv.fr/resources/base-nationale-des-lieux-de-stationnement/20210502-172910/bnls-2-.csv'
 
