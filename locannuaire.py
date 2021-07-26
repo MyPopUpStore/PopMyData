@@ -453,12 +453,12 @@ def carte(df, coord):
     minimap = plugins.MiniMap()
     m.add_child(minimap)
 
-    plugins.LocateControl().add_to(m)
+    plugins.LocateControl(strings={"title": "Localisez-moi"}).add_to(m)
 
     plugins.Fullscreen(
         position="topleft",
-        title="Expand me",
-        title_cancel="Exit me",
+        title="Plein écran",
+        title_cancel="Quitter",
         force_separate_button=True,
     ).add_to(m)
 
