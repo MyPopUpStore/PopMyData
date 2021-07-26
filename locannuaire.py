@@ -568,9 +568,9 @@ FLPM_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/
 FLPM_BDX = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/FLPM_BDX.csv'
 FLPM_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/FLPM_LIL.csv'
 
-BANCO_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/banco_prs.csv'
-BANCO_BDX = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/banco_bdx.csv'
-BANCO_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/banco_lil.csv'
+BANCO_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_PRS.csv'
+BANCO_BDX = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_BDX.csv'
+BANCO_LIL = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/BANCO_LIL.csv'
 
 METRO_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/metro_paris.csv'
 FREQ_PRS = 'https://raw.githubusercontent.com/MickaelKohler/PopMyData/main/Data/frequentation_metro_paris.csv'
