@@ -625,9 +625,14 @@ st.sidebar.info(
 
 # MAIN PAGE #
 
-st.title('Bienvenue sur Locannuaire')
-st.subheader('Outil de prospection des locaux commerciaux')
-st.title(' ')
+col1, col2 = st.beta_columns([1, 2])
+with col1:
+    st.write(' ')
+    st.image('https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/logo.rond.png')
+with col2:
+    st.title(" ")
+    st.title('Bienvenue sur Locannuaire')
+    st.subheader('Outil de prospection des locaux commerciaux')
 
 # choose city
 category = st.selectbox('Choisissez une ville : ',
