@@ -12,7 +12,7 @@ _Outil de prospection de locaux comemrciaux_
 
 ## Origine du projet
 
-Les projet _Pop My Data_ est néé d'une volonté de __My Pop Up Store__ de pouvoir avoir un outil pratique et rapide pour prospecter de nouveaux locaux commerciaux où installer des boutiques éphemères. 
+Les projet _Pop My Data_ est né d'une volonté de __My Pop Up Store__ de pouvoir avoir un outil pratique et rapide pour prospecter de nouveaux locaux commerciaux où installer des boutiques éphemères. 
 
 Deux thématiques sont étudiées par l'outils :
 - Caractériser l'attractivité d'un emplacement
