@@ -578,7 +578,7 @@ FREQ_LIL = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/m
 INSEE = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/insee.csv'
 BPE = 'https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Data/bpe.csv'
 
-PARK = 'https://static.data.gouv.fr/resources/base-nationale-des-lieux-de-stationnement/20210502-172910/bnls-2-.csv'
+PARK = 'https://www.data.gouv.fr/fr/datasets/r/e32f7675-913b-4e01-b8c8-0a29733e4407' # Base nationale des stationnalements
 
 
 # SIDEBAR #
