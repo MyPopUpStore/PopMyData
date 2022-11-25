@@ -1002,16 +1002,16 @@ elif requete:
 
             # expander
             st.title(' ')
-            option = st.beta_expander("Afficher le détail des indices")
+            option = st.expander("Afficher le détail des indices")
             option.write(' ')
-            col1, col2, col3 = option.beta_columns(3)
+            col1, col2, col3 = option.columns(3)
             with col1:
                 st.markdown(f'Longitude : {lon}')
             with col2:
                 st.markdown(f'Latitude : {lat}')
             with col3:
                 st.markdown(f'Code Iris : {code_iris}')
-            col1, col2 = option.beta_columns([3, 2])
+            col1, col2 = option.columns([3, 2])
             with col1:
                 st.markdown("**Indice de Visiblité** (zone de 200m)")
                 st.dataframe(final_viz)
@@ -1019,7 +1019,7 @@ elif requete:
                 st.markdown("""**Indice d'Accessiblité**  
                                (zone de 400m)""")
                 st.dataframe(final_access)
-            col1, col2 = option.beta_columns([8, 9])
+            col1, col2 = option.columns([8, 9])
             with col1:
                 st.markdown("**Indice de Population** (quartier IRIS)")
                 st.dataframe(final_pop)
