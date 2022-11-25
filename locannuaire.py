@@ -625,7 +625,7 @@ st.sidebar.info(
 
 # MAIN PAGE #
 
-col1, col2 = st.beta_columns([1, 2])
+col1, col2 = st.columns([1, 2])
 with col1:
     st.write(' ')
     st.image('https://raw.githubusercontent.com/MyPopUpStore/PopMyData/main/Ressources%20Wiki/logo.rond.png')
@@ -654,7 +654,7 @@ flpm = load_data(category['flpm'])
 banco = load_data(category['banco'])
 
 # choose address
-col1, col2 = st.beta_columns([1, 2])
+col1, col2 = st.columns([1, 2])
 with col1:
     numb = st.number_input('Numéro du local :', value=1, step=1,
                            help="Ne pas indiquer l'indice de répétition")
@@ -663,7 +663,7 @@ with col2:
                            help='La recherche va chercher le nom de rue le plus proche dans la base de données.')
 
 # choose option
-col1, col2, col3, col4 = st.beta_columns([4, 3, 3, 3])
+col1, col2, col3, col4 = st.columns([4, 3, 3, 3])
 with col1:
     indice_attractivite = st.checkbox("Indice d'attractivité", value=True)
 with col2:
@@ -731,7 +731,7 @@ elif requete:
         indice_attractivite, cartographie, coordonnees_proprio, history = None, None, None, None
         if street.lower() == 'wild code school':
             st.balloons()
-            col1, col2 = st.beta_columns([5, 1])
+            col1, col2 = st.columns([5, 1])
             col2.write('🦆')
         else:
             st.warning("""Aucune adresse, ni aucune coordonnées géographiques n'ont pu être identifiées 
@@ -953,7 +953,7 @@ elif requete:
 
             # print indices
             final_viz.iloc[2:5, 0] = final_viz.iloc[2:5, 0].apply(lambda x: str(x) + ' %')  # print percent
-            col1, col2 = st.beta_columns([2, 1])
+            col1, col2 = st.columns([2, 1])
             with col1:
                 st.title(' ')
                 st.subheader("Indice d'attractivité de l'emplacement")
@@ -966,7 +966,7 @@ elif requete:
                         <span class="text">/ 100</span> </p>
                     ''', unsafe_allow_html=True)
             st.title(' ')
-            col1, col2, col3, col4 = st.beta_columns(4)
+            col1, col2, col3, col4 = st.columns(4)
             with col1:
                 color = rate_color(final_viz.iloc[-1, 1], 30)
                 st.markdown(
@@ -1086,7 +1086,7 @@ elif requete:
                     # display the address
                     siege = status['siege']
                     nom_soc = status['denomination']
-                    col1, col2 = st.beta_columns(2)
+                    col1, col2 = st.columns(2)
                     with col1:
                         if siege['adresse_ligne_1'] is not None:
                             ad1_soc = siege['adresse_ligne_1'].lower()
@@ -1114,12 +1114,12 @@ elif requete:
                     index = 0
                     if len(status['representants']) > 1:
                         for ligne in range((len(status['representants'])//2)):
-                            cols = st.beta_columns(2)
+                            cols = st.columns(2)
                             for i, col in enumerate(cols):
                                 col.info(print_associates(index, status))
                                 index += 1
                         if len(status['representants']) % 2 == 1:
-                            col1, col2 = st.beta_columns(2)
+                            col1, col2 = st.columns(2)
                             with col1:
                                 st.info(print_associates(index, status))
 
