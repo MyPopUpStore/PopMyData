@@ -60,6 +60,8 @@ La liste des  bases de données consultées est [disponibles dans le wiki](https
 
 La version 1.0 de la WebApp *locannuaire* est disponible depuis le 27/07/2021.
 
+Mise à jour des bases et de l'application le 25/11/2022
+
 ## La Team
 
 Le projet a été réalisé par les élèves de la **Wild Code School** :
