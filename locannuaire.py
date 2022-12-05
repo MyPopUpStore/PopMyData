@@ -755,14 +755,12 @@ elif requete:
                 metro_tram = pd.merge(metro_prox, freq_metro, left_on='Arrêt', right_on='nom', how='left')
 
                 # Bus
-                r = requests.get('https://data.ratp.fr/api/records/1.0/search/',
-                                 params={'dataset': 'accessibilite-des-arrets-de-bus-ratp',
-                                         'geofilter.distance': f'{lat}, {lon}, 400'})
+                r = requests.get('https://opendata.paris.fr/api/records/1.0/search/',
+                                                 params={'dataset': 'plan-de-voirie-mobiliers-urbains-abris-voyageurs-points-darrets-bus',
+                                                         'geofilter.distance': f'{lat}, {lon}, 400'})
                 reponse = pd.json_normalize(r.json(), record_path='records')
                 if len(reponse) > 0:
-                    reponse.drop_duplicates(['fields.nomptar'], inplace=True, keep='first')
-                    bus = reponse[['fields.nomptar', 'fields.dist']].rename(columns={'fields.name': 'Nom de la station',
-                                                                                     'fields.dist': 'Distance'})
+                    bus = reponse[reponse['fields.igds_level']==21][['fields.objectid', 'fields.dist']]
 
                 # velo libre service
                 r = requests.get('https://opendata.paris.fr/api/records/1.0/search/',
