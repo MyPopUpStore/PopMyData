@@ -717,25 +717,29 @@ elif requete:
     search_adr = '+'.join((str(numb) + ' ' + street + ' ' + city).split())
     adresse_geo = f"https://api-adresse.data.gouv.fr/search/?q={search_adr}"
     geo = requests.get(adresse_geo).json()
-    if len(geo['features']) > 0:
-        coord_geo = geo['features'][0]['geometry']['coordinates']
-        geo_point = (coord_geo[1], coord_geo[0])
-        lat = coord_geo[1]
-        lon = coord_geo[0]
+    try:
+        if len(geo['features']) > 0:
+            coord_geo = geo['features'][0]['geometry']['coordinates']
+            geo_point = (coord_geo[1], coord_geo[0])
+            lat = coord_geo[1]
+            lon = coord_geo[0]
 
-        # code iris (API)
-        rep_iris = requests.get(PYRIS_link, params={'lat': lat, 'lon': lon})
-        code_iris = rep_iris.json()['complete_code']
+            # code iris (API)
+            rep_iris = requests.get(PYRIS_link, params={'lat': lat, 'lon': lon})
+            code_iris = rep_iris.json()['complete_code']
 
-    else:
-        indice_attractivite, cartographie, coordonnees_proprio, history = None, None, None, None
-        if street.lower() == 'wild code school':
-            st.balloons()
-            col1, col2 = st.columns([5, 1])
-            col2.write('🦆')
         else:
-            st.warning("""Aucune adresse, ni aucune coordonnées géographiques n'ont pu être identifiées 
-                          avec ce nom de rue. Vérifiez le noms que vous avez indiquez.""")
+            indice_attractivite, cartographie, coordonnees_proprio, history = None, None, None, None
+            if street.lower() == 'wild code school':
+                st.balloons()
+                col1, col2 = st.columns([5, 1])
+                col2.write('🦆')
+            else:
+                st.warning("""Aucune adresse, ni aucune coordonnées géographiques n'ont pu être identifiées 
+                              avec ce nom de rue. Vérifiez le noms que vous avez indiquez.""")
+    except Exception as error : 
+        indice_attractivite, cartographie, coordonnees_proprio, history = None, None, None, None
+        st.warning("API Adresse Data Gouv non accessible")
 
 
     if indice_attractivite:
